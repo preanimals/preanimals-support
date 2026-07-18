@@ -14,12 +14,20 @@ Pre-Animals が公開するアプリの、**サポートページとプライバ
 
 ## 公開URL（GitHub Pages）
 
-`[GitHubユーザー名]` は、公開後に実際の値へ置き換えてください。
+- トップ： <https://preanimals.github.io/preanimals-support/>
+- あれした？： <https://preanimals.github.io/preanimals-support/areshita/>
+- プライバシーポリシー： <https://preanimals.github.io/preanimals-support/areshita/privacy/>
+- サポート： <https://preanimals.github.io/preanimals-support/areshita/support/>
 
-- トップ： `https://[GitHubユーザー名].github.io/preanimals-support/`
-- あれした？： `https://[GitHubユーザー名].github.io/preanimals-support/areshita/`
-- プライバシーポリシー： `https://[GitHubユーザー名].github.io/preanimals-support/areshita/privacy/`
-- サポート： `https://[GitHubユーザー名].github.io/preanimals-support/areshita/support/`
+リポジトリ： <https://github.com/preanimals/preanimals-support>
+
+### App Store Connect に入力するURL
+
+| 項目 | URL |
+| --- | --- |
+| Privacy Policy URL | `https://preanimals.github.io/preanimals-support/areshita/privacy/` |
+| Support URL | `https://preanimals.github.io/preanimals-support/areshita/support/` |
+| Marketing URL（任意） | `https://preanimals.github.io/preanimals-support/areshita/` |
 
 ## ディレクトリ構成
 
