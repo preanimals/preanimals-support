@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>サポート — イツマデ</title>
+<meta name="description" content="イツマデ（暮らしの期限管理）のサポート">
+<meta name="robots" content="index,follow">
+<style>
+:root {
+  --bg: #fdfbf7; --surface: #ffffff; --border: #ebe4d8;
+  --text: #4a4038; --muted: #8b8177; --faint: #b3aaa0; --accent: #a4622a;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 0 1.25rem 4rem;
+  background: var(--bg); color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic ProN',
+    'Hiragino Sans', 'Noto Sans JP', 'Yu Gothic', sans-serif;
+  font-size: 16px; line-height: 1.8;
+  -webkit-text-size-adjust: 100%;
+}
+main { max-width: 40rem; margin: 0 auto; }
+header { padding: 2.5rem 0 0; }
+.eyebrow { font-size: 0.6875rem; letter-spacing: 0.4em; color: var(--faint); margin: 0; }
+h1 { font-size: 1.375rem; font-weight: 400; letter-spacing: -0.01em; margin: 0.5rem 0 0; }
+.lede { color: var(--muted); margin: 0.5rem 0 0; }
+.updated { font-size: 0.75rem; color: var(--faint); margin: 1.5rem 0 0; }
+h2 { font-size: 0.9375rem; font-weight: 600; margin: 2.5rem 0 0; }
+h3 { font-size: 0.875rem; font-weight: 600; margin: 1.75rem 0 0; }
+p { color: var(--muted); margin: 0.5rem 0 0; }
+ul, ol { color: var(--muted); margin: 0.5rem 0 0; padding-left: 1.25rem; }
+li { margin: 0.25rem 0; }
+a { color: var(--accent); }
+.note {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 14px; padding: 0.875rem 1rem; margin: 1rem 0 0;
+  font-size: 0.875rem; color: var(--muted);
+}
+nav.links { margin: 2.5rem 0 0; font-size: 0.875rem; }
+nav.links a { margin-right: 1.25rem; }
+footer { margin: 3.5rem 0 0; font-size: 0.75rem; color: var(--faint); }
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1d1a17; --surface: #272320; --border: #3a342e;
+    --text: #f0e9df; --muted: #b0a698; --faint: #7d746a; --accent: #f0bb8a;
+  }
+}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="eyebrow">イツマデ</p>
+    <h1>サポート</h1>
+    <p class="lede">イツマデ（暮らしの期限管理）の使い方とよくある確認事項</p>
+    
+  </header>
+
+  <section>
+    <h2>このアプリについて</h2>
+    <p>イツマデは、食品の賞味期限から日用品の交換時期まで、身の回りの「いつまで？」をまとめて記録しておくためのアプリです。登録した内容は端末の中だけに保存され、外部に送信されることはありません。アカウント登録は必要ありません。</p>
+  </section>
+
+  <section>
+    <h2>通知が届かないとき</h2>
+    <p>次の順に確認してみてください。</p>
+    <ol>
+      <li>iOS の「設定」アプリ →「イツマデ」→「通知」で、通知が許可されているか確認します。</li>
+      <li>アプリの「設定」→「通知」にある<strong>テスト通知を送る</strong>を押し、ホーム画面に戻って10秒待ちます。ここで届けば、通知そのものは正しく動いています。</li>
+      <li>集中モード（おやすみモードなど）が入っていないか確認します。入っていると通知が保留されることがあります。</li>
+      <li>各項目の「通知」で、期限の何日前に知らせるかが選ばれているか確認します。ひとつも選ばれていないと通知は予約されません。</li>
+      <li>アプリの「設定」→「通知の時刻」を確認します。すでに過ぎた時刻の通知は予約されません。</li>
+    </ol>
+    <p class="note">通知は、端末の状態や iOS の都合により、予定した時刻ちょうどに届かないことがあります。大切なものは通知だけに頼らず、ご自身でも確認してください。</p>
+  </section>
+
+  <section>
+    <h2>データを書き出す（バックアップ）</h2>
+    <p>データは端末の中だけにあります。機種を変えるときやアプリを入れ直す前に、書き出しておいてください。</p>
+    <ol>
+      <li>アプリの「設定」→「データの持ち出し」→<strong>データを書き出す</strong>を押します。</li>
+      <li>共有シートが開くので、「ファイルに保存」などを選びます。</li>
+    </ol>
+    <p>写真も含めて 1 つのファイル（itsumade-日付.json）にまとまります。</p>
+    <p class="note">書き出したファイルには、登録した内容と写真がそのまま入っています。第三者に渡さないようご注意ください。</p>
+  </section>
+
+  <section>
+    <h2>データを読み込む</h2>
+    <ol>
+      <li>アプリの「設定」→「データの持ち出し」→<strong>書き出したデータを読み込む</strong>を押します。</li>
+      <li>ファイルを選ぶと、件数と内容の確認が出ます。</li>
+      <li>内容を確かめて「置き換える」を押します。</li>
+    </ol>
+    <p class="note">読み込むと、いま端末に入っている項目・履歴・写真は<strong>すべて置き換わります</strong>。元に戻すことはできないため、読み込む前に一度書き出しておくことをおすすめします。</p>
+  </section>
+
+  <section>
+    <h2>データを削除する</h2>
+    <p>アプリの「設定」→「データ」→「すべてのデータを削除」で、端末内の記録を消せます。アプリ自体を削除した場合も、中のデータは一緒に失われます。</p>
+    <p>運営者はデータを保持していないため、消えた内容を復元することはできません。</p>
+  </section>
+
+  <section>
+    <h2>期限の目安について</h2>
+    <p>アプリが示す期限や交換時期の目安は、一般的な参考情報です。実際の商品の表示、メーカーの案内、保存状態、使用状況を必ず優先してください。食品や製品の安全性を判断・保証するものではありません。</p>
+  </section>
+
+  <section>
+    <h2>お問い合わせ</h2>
+    <p>ご意見やうまく動かないことがありましたら、こちらまでお知らせください。</p>
+    <p><a href="mailto:dayswithyousupport@gmail.com?subject=%E3%80%90%E3%82%A4%E3%83%84%E3%83%9E%E3%83%87%E3%80%91%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">dayswithyousupport@gmail.com</a></p>
+    <p>運営者: Pre-Animals</p>
+  </section>
+
+  <nav class="links">
+        <a href="../privacy/">プライバシーポリシー</a>
+        <a href="../terms/">利用規約</a>
+  </nav>
+
+  <footer>
+    <p>イツマデ — 暮らしの期限管理 / バージョン 1.0.0</p>
+    
+    <p>© 2026 Pre-Animals</p>
+  </footer>
+</main>
+</body>
+</html>

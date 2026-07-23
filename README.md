@@ -9,25 +9,53 @@ Pre-Animals が公開するアプリの、**サポートページとプライバ
 | アプリ | ページ |
 | --- | --- |
 | あれした？（かんたん行動記録） | `areshita/` |
+| イツマデ（暮らしの期限管理） | `itsumade/` |
 
-今後、Days With You など他のアプリのページも、`areshita/` と同じ構成（`<アプリ>/`, `<アプリ>/privacy/`, `<アプリ>/support/`）で追加できます。
+今後のアプリのページも、`areshita/` と同じ構成（`<アプリ>/`, `<アプリ>/privacy/`, `<アプリ>/support/`）で追加できます。
+
+**`itsumade/` だけは扱いが違います。** アプリ本体のリポジトリで生成しているため、
+共通の `assets/styles.css` を読まず、配色を自前で持っています。文面もアプリ内の
+画面と同じ元データ（`src/lib/data/legal.ts`）から作られます。更新するときは
+itsumade 側で `npm run build:web` を実行し、生成された `web/` の中身を
+このリポジトリの `itsumade/` へ上書きコピーしてください。ここで直接編集すると、
+次の生成で戻ります。
 
 ## 公開URL（GitHub Pages）
 
 - トップ： <https://preanimals.github.io/preanimals-support/>
-- あれした？： <https://preanimals.github.io/preanimals-support/areshita/>
+
+あれした？
+
+- 入口： <https://preanimals.github.io/preanimals-support/areshita/>
 - プライバシーポリシー： <https://preanimals.github.io/preanimals-support/areshita/privacy/>
 - サポート： <https://preanimals.github.io/preanimals-support/areshita/support/>
+
+イツマデ
+
+- 入口： <https://preanimals.github.io/preanimals-support/itsumade/>
+- プライバシーポリシー： <https://preanimals.github.io/preanimals-support/itsumade/privacy/>
+- サポート： <https://preanimals.github.io/preanimals-support/itsumade/support/>
+- 利用規約： <https://preanimals.github.io/preanimals-support/itsumade/terms/>
 
 リポジトリ： <https://github.com/preanimals/preanimals-support>
 
 ### App Store Connect に入力するURL
+
+あれした？
 
 | 項目 | URL |
 | --- | --- |
 | Privacy Policy URL | `https://preanimals.github.io/preanimals-support/areshita/privacy/` |
 | Support URL | `https://preanimals.github.io/preanimals-support/areshita/support/` |
 | Marketing URL（任意） | `https://preanimals.github.io/preanimals-support/areshita/` |
+
+イツマデ
+
+| 項目 | URL |
+| --- | --- |
+| Privacy Policy URL | `https://preanimals.github.io/preanimals-support/itsumade/privacy/` |
+| Support URL | `https://preanimals.github.io/preanimals-support/itsumade/support/` |
+| Marketing URL（任意） | `https://preanimals.github.io/preanimals-support/itsumade/` |
 
 ## ディレクトリ構成
 
@@ -38,6 +66,11 @@ preanimals-support/
 │   ├── index.html          あれした？ 入口
 │   ├── privacy/index.html  プライバシーポリシー
 │   └── support/index.html  サポート
+├── itsumade/               イツマデ（itsumade 側の build:web が生成）
+│   ├── index.html
+│   ├── privacy/index.html
+│   ├── support/index.html
+│   └── terms/index.html
 ├── assets/
 │   └── styles.css          共通スタイル
 ├── .nojekyll               GitHub Pages に Jekyll 処理をさせない
