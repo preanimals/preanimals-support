@@ -94,7 +94,7 @@ python3 -m http.server 8000
 
 ## お問い合わせ
 
-dayswithyousupport@gmail.com
+preanimalssupport@gmail.com
 
 ## 方針
 
